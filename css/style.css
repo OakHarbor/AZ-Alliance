@@ -10,8 +10,7 @@
     height: auto;
     width: 100%;
     background: rgb(154,222,233);
-    background: -moz-linear-gradient(101deg, rgba(154,222,233,1) 0%, #73d1e2 100%);
-    background: -webkit-linear-gradient(101deg, rgba(154,222,233,1) 0%, #73d1e2 100%);
+    background: -o-linear-gradient(349deg, rgba(154,222,233,1) 0%, #73d1e2 100%);
     background: linear-gradient(101deg, rgba(154,222,233,1) 0%, #73d1e2 100%);
     color: #fff;
     position: relative;
@@ -729,11 +728,20 @@
     <--- -------------------------- -*/
 
     .qualities-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         max-width: 700px;
     }
 
@@ -762,7 +770,9 @@
     }
 
     .gallery-topper h2 {
-        transform: translateX(-160px);
+        -webkit-transform: translateX(-160px);
+            -ms-transform: translateX(-160px);
+                transform: translateX(-160px);
         font-size: 30px;
     }
 
