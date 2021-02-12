@@ -1,0 +1,124 @@
+/*-- -------------------------- -->
+<---          Sub Page          -->
+<--- -------------------------- -*/
+
+#sub-page {
+    height: 300px;
+    background: url("/images/sub-page-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#sub-page:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(154,222,233);
+    background: -moz-radial-gradient(circle, rgba(154,222,233,0.8519782913165266) 5%, rgba(54,144,143,1) 89%);
+    background: -webkit-radial-gradient(circle, rgba(154,222,233,0.8519782913165266) 5%, rgba(54,144,143,1) 89%);
+    background: radial-gradient(circle, rgba(154,222,233,0.8519782913165266) 5%, rgba(54,144,143,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9adee9",endColorstr="#36908f",GradientType=1);
+    }
+
+#sub-page h1 {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+/*-- -------------------------- -->
+<---          Call Now          -->
+<--- -------------------------- -*/
+
+#call-now {
+    background: #73d1e2;
+    padding: 50px 0;
+    position: relative;
+}
+
+#call-now h2 {
+    font-size: 27px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#call-now a {
+    line-height: 50px;
+    background: #9dd51f;
+    color: #fff;
+    padding: 0 20px;
+    display: block;
+    width: 190px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#call-now a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url("/images/seagull.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -15px;
+    right: -10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*-- -------------------------- -->
+    <---           Landing          -->
+    <--- -------------------------- -*/
+
+    #sub-page h1 {
+        font-size: 60px;
+    }
+
+    /*-- -------------------------- -->
+    <---           Contact          -->
+    <--- -------------------------- -*/
+
+    #call-now h2 {
+        width: 470px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---           Landing          -->
+    <--- -------------------------- -*/
+
+    #sub-page {
+        background-attachment: fixed;
+        margin-bottom: 50px;
+    }
+
+    #sub-page h1 {
+        font-size: 60px;
+    }
+}

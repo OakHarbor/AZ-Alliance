@@ -1,0 +1,223 @@
+/*-- -------------------------- -->
+<---        ABOUT CONTENT       -->
+<--- -------------------------- -*/
+
+.about-content {
+    margin-top: 30px;
+}
+
+.about-content-container img {
+    width: 100%;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
+    box-shadow: 0 0 40px rgba(0,0,0,.1);
+    border-radius: 5px;
+    display: none;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content p:first-child {
+    font-size: 0.875em;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 0;
+}
+
+.about-content h2 {
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary);
+    padding-left: 20px;
+}
+
+.about-content ul {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.about-content ul li {
+    font-weight: 600;
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 1.125em;
+    color: #222;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.about-content ul li:before {
+    content: "";
+    margin-bottom: 10px;
+    position: absolute;
+    left: -50px;
+    top: -13px;
+    background: url("/images/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+}
+
+.about-content ul li:before svg {
+    width: 100px !important;
+}
+
+/*-- -------------------------- -->
+<---         ABOUT STRIP        -->
+<--- -------------------------- -*/
+
+#about-strip {
+    background: url("/images/call-strip-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#about-strip:before {
+    content: '';
+    background: #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .6;
+}
+
+.strip-content h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.875em;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 100;
+}
+
+.strip-content button {
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+}
+
+#about-strip img {
+    width: 450px;
+    position: absolute;
+    display: none;
+}
+
+/*-- -------------------------- -->
+<---         Compliance         -->
+<--- -------------------------- -*/
+
+#compliance {
+    padding-bottom: 50px;
+}
+
+.image-background {
+    background: url("/images/tropical.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.image-background:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    background: rgb(154,222,233);
+    background: -o-radial-gradient(circle, rgba(154,222,233,0.8519782913165266) 5%, rgba(54,144,143,1) 89%);
+    background: radial-gradient(circle, rgba(154,222,233,0.8519782913165266) 5%, rgba(54,144,143,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9adee9",endColorstr="#36908f",GradientType=1);
+    }
+
+#compliance h2 {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .about-content {
+        display: block;
+        width: 600px;
+        margin: auto;
+    }
+
+    .about-content h2 {
+        font-size: 2em;
+    }
+
+    .about-content ul {
+        -webkit-column-count: 3;
+           -moz-column-count: 3;
+                column-count: 3;
+        overflow: visible;
+        height: 260px;
+    }
+
+    .about-content ul li:before {
+        top: 0px;
+    }
+
+    #compliance .container {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---           Landing          -->
+    <--- -------------------------- -*/
+
+    #sub-page {
+        margin-bottom: 80px;
+    }
+
+    #sub-page h1 {
+        font-size: 60px;
+    }
+
+    .image-background {
+        background-attachment: fixed;
+    }
+
+    .about-content {
+        width: 700px;
+    }
+
+    #compliance .container {
+        width: 700px;
+    }
+
+    /*-- -------------------------- -->
+    <---           Contact          -->
+    <--- -------------------------- -*/
+
+    #call-now h2 {
+        width: 470px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}

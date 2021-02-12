@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/sub-page.css">
+
+     <!-- jQuery -->
+     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script defer src="https://kit.fontawesome.com/4f8f1d146c.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Debt Collection Services | A-Z Alliance LLC | Miami, FL</title>
+</head>
+<body>
+    <header>
+        <!-- Desktop Navbar -->
+        <div class="mobile-wrapper">
+            <div class="mobile-nav container mobile-nav-container">
+                <img id="mobile-logo" src="/images/company-logo-desktop.png" alt="mobile_company_logo" height="60"> 
+
+                <!-- Hamburger Menu -->
+                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+                    <span aria-hidden="true" class="hamburger-box">
+                        <span aria-hidden="true" class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
+        <nav>
+            <!-- <div class="background container">
+                <div class="top-nav-strip container">
+                    <span>Call: (555) 234-2345</span>
+                    <span>info@email.com</span>
+                    <span>Los Angeles, CA 98210</span>
+                </div>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div> -->
+            <!-- <div class="line"></div> -->
+            <div class="navbar-menu">
+                <div class="navbar-menu">
+                    <img class="nav-keep" src="/images/company-logo-desktop.png" alt="compnay logo" width="100px">
+                    <div id="side-menu" class=" side-nav">
+                        <ul id="on-top" class="navbar-links">
+                            <li class="nav-li"><a href="/index.html">Home</a></li>
+                            <li class="nav-li"><a href="/html/about.html">About</a></li>
+                            <li class="nav-li"><a href="/html/services.html">Services</a></li>
+                            <li class="nav-li"><a class="active-menu" href="/html/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="sub-page">
+        <div class="container">
+            <h1>Contact</h1>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    FORM                      -->
+    <!-- ============================================ -->
+    
+    <section id="valley-form" class="container">
+        <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true">
+            <span>A-Z Alliance</span>
+            <h3 class="contact-topper">Send a Message</h3>
+            <p class="form-p">We're ready to take your call or email.  Let us know what we can do for you!</p>
+    
+            <input aria-label="name" class="input1" name="name" placeholder="Name" type="text" tabindex="1" required>
+            <input aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="2" required>
+            <input aria-label="phone number" class="input1" name="phone" placeholder="Phone Number" type="tel" tabindex="3" required>
+            <input aria-label="location" class="input1 right" name="location" placeholder="Your Location" type="text" tabindex="4" required>
+            <input aria-label="how did you hear about us" name="hear" placeholder="How Did You Hear About Us" type="text" tabindex="5" required>
+            <textarea aria-label="write your message" name="message" placeholder="Write Message" tabindex="6" required></textarea>
+            <div data-netlify-recaptcha="true"></div>
+            <p class="form-submit">
+                <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">Submit</button>
+            </p>
+        </form>
+        <div class="contact-right">
+            <h3>Location</h3>
+            <p>Miami, FL</p>
+            <h3>Phone</h3>
+            <p>(561) 592-7592</p>
+            <h3>Email</h3>
+            <p>info@azalliancecollections.com</p>
+            <h3>Working Hours</h3>
+            <p>Mon to Sat: 7am to 7pm</p>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                   Call Now                   -->
+    <!-- ============================================ -->
+
+    <section id="call-now">
+        <div class="container">
+            <h2>Give us a call to give you a hassle free debt collection service!</h2>
+            <a href="tel:561-592-7592">Call Now!</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <img src="/images/company-logo-desktop.png" alt="">
+            <!-- <a class="links" href="">Privacy Policy</a>
+            <a class="links" href="">Terms & Conditions</a> -->
+        </div>
+        <div class="design-credit">
+            <p>Developed by <a href="https://www.oakharborwebdesigns.com/">Oak Harbor Web Designs</a></p>
+        </div>
+    </footer>
+
+    <script defer src="/app.js"></script>
+</body>
+</html>
