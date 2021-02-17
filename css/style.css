@@ -6,6 +6,10 @@
     display: none;
 }
 
+.desktop {
+    display: none !important;
+}
+
 #hero {
     height: auto;
     width: 100%;
@@ -798,6 +802,18 @@
         margin-left: 200px;
         height: 300px;
         bottom: 70px;
+    }
+
+    .mobile {
+        display: none !important;
+    }
+
+    .graphic {
+        z-index: 1;
+    }
+
+    .about-button:hover {
+        cursor: pointer;
     }
 
     /*-- -------------------------- -->
