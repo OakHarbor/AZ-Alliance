@@ -37,6 +37,14 @@
     text-align: center;
 }
 
+.graphic {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 /*-- -------------------------- -->
 <---          Call Now          -->
 <--- -------------------------- -*/
@@ -92,6 +100,10 @@
     <---           Landing          -->
     <--- -------------------------- -*/
 
+    #sub-page {
+        padding-top: 60%;
+    }
+
     #sub-page h1 {
         font-size: 60px;
     }
@@ -116,9 +128,12 @@
     #sub-page {
         background-attachment: fixed;
         margin-bottom: 50px;
+        padding-top: 28%;
     }
 
     #sub-page h1 {
         font-size: 60px;
+        width: 400px;
+        transform: translate(-99%, 50%);
     }
 }
