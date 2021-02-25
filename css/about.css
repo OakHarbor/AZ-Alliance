@@ -114,12 +114,99 @@
     display: none;
 }
 
+.services-button {
+    line-height: 50px;
+    background: #9dd51f;
+    color: #fff;
+    padding: 0 20px;
+    display: block;
+    width: 190px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    z-index: 10;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    margin-top: 70px;
+}
+
+.sun {
+    position: absolute;
+    visibility: hidden;
+    width: 50px;
+    top: -40px;
+    left: -40px;
+    opacity: 0;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.services-button:hover .sun {
+    top: -20px !important;
+    left: -20px !important;
+    opacity: 1 !important;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    visibility: visible;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+    }
+}
+
+.services-button:hover {
+    background: #36908f;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.services-button:hover .services-button .sun {
+    top: -25px;
+    left: -25px;
+}
+
 /*-- -------------------------- -->
 <---         Compliance         -->
 <--- -------------------------- -*/
 
 #compliance {
     padding-bottom: 50px;
+}
+
+.beach2 {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width: 450px;
 }
 
 .image-background {
@@ -151,6 +238,22 @@
     font-size: 36px;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+#compliance ul li {
+    list-style: none;
+    position: relative;
+}
+
+#compliance ul li:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 9px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(154,222,233);
 }
 
 @media screen and (min-width: 768px) {
@@ -212,5 +315,32 @@
         width: 470px;
         margin: auto;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    #compliance {
+        margin-bottom: 100px;
+    }
+
+    #compliance .container {
+        text-align: center;
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .beach2 {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 80px;
+        max-width: 550px;
+    }
+
+    .wrapper {
+        display: inline-block;
+        text-align: left !important;
+        width: 500px;
+        vertical-align: middle;
     }
 }
