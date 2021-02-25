@@ -257,6 +257,10 @@
     .image {
         width: 764px;
         margin: 100px auto;
-        border-radius: 20px;
+        border-radius: 10px;
+    }
+
+    .image:before {
+        border-radius: 10px;
     }
 }
