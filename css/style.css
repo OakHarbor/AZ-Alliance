@@ -355,6 +355,83 @@
     margin: auto;
 }
 
+.services-button {
+    line-height: 50px;
+    background: #9dd51f;
+    color: #fff;
+    padding: 0 20px;
+    display: block;
+    width: 190px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    z-index: 10;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+#services .service-item .sun {
+    position: absolute;
+    width: 50px;
+    top: -40px;
+    left: -40px;
+    opacity: 0;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.services-button:hover .sun {
+    top: -20px !important;
+    left: -20px !important;
+    opacity: 1 !important;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+    }
+}
+
+.services-button:hover {
+    background: #36908f;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.services-button:hover #services .services-button .sun {
+    top: -25px;
+    left: -25px;
+}
+
 /*-- -------------------------- -->
 <---          Call Now          -->
 <--- -------------------------- -*/
@@ -388,6 +465,16 @@
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+#call-now a:hover {
+    background: #36908f;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
 }
 
 #call-now a:before {
@@ -819,7 +906,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         border-radius: 50%;
         z-index: 9991000;
     }
