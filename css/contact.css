@@ -280,6 +280,10 @@ form p{
         padding-bottom: 80px;
     }
 
+    main .container {
+        max-width: 1000px !important;
+    }
+
     #contact {
         max-width: 600px;
     }
