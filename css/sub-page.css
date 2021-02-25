@@ -88,6 +88,16 @@ p {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+#call-now a:hover {
+    background: #36908f;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
 }
 
 #call-now a:before {
