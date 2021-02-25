@@ -295,6 +295,7 @@ form p{
     .contact-right {
         width: 300px;
         border-radius: 10px;
+        padding-left: 20px;
     }
 
     .input1 {
