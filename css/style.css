@@ -695,7 +695,7 @@
 <--- -------------------------- -*/
 
 /* Phones */
-@media screen and (min-width: 370px) and (max-width: 430px) {
+@media screen and (max-width: 430px) {
 
     #hero {
         height: 630px;
