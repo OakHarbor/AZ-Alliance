@@ -22,6 +22,11 @@
     width: 100%;
     margin: 50px auto;
     position: relative;
+    border-radius: 10px;
+}
+
+.image:before {
+    border-radius: 10px;
 }
 
 .image span {
@@ -225,7 +230,7 @@
     }
 
     .image {
-        margin: 70px 0;
+        margin: 50px 0;
     }
     
 }
@@ -256,8 +261,7 @@
     }
 
     .image {
-        width: 764px;
-        margin: 100px auto;
+        margin: 50px auto;
         border-radius: 10px;
     }
 

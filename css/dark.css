@@ -1,0 +1,324 @@
+:root {
+    --dark: #18191a;
+    --medium: #1b1b1b;
+    --light: #2e2e2e;
+}
+
+.dark-mode-button {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.top-dark-mode-button {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    z-index: 1000;
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+}
+
+.top-dark-mode-button .dark-toggle {
+    background: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+    width: 35px;
+}
+
+.top-dark-mode-button:after {
+    content: 'DARK';
+    position: absolute;
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 22px;
+    top: 10px;
+    -webkit-transition: .1s ease-in;
+    -o-transition: .1s ease-in;
+    transition: .1s ease-in;
+}
+
+body.dark-mode .top-dark-mode-button:after {
+    content: 'LIGHT';
+    color: var(--primary);
+    top: 12px;
+}
+
+.dark-toggle {
+    margin: 0;
+    width: 30px;
+    height: 16px;
+    z-index: 20;
+    border-radius: 10px;
+    background: transparent;
+    border: 3px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 1000;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+body.dark-mode .dark-toggle {
+    background: rgb(67,183,255);
+    background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
+    background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
+    border: none;
+}
+
+.dark-toggle span {
+    height: 20px;
+    width: 20px;
+    left: -8px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+body.dark-mode .dark-toggle span {
+    left: 15px;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.top-dark-mode-button .dark-toggle {
+    background: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+    width: 35px;
+}
+
+
+/* Begin adding your dark mode styles here, like so: */
+
+body.dark-mode {
+    background: #18191a
+}
+
+body.dark-mode p {
+    color: #fff;
+    opacity: .9;
+}
+
+body.dark-mode .white {
+    display: none !important;
+}
+
+.dark {
+    display: none !important;
+}
+
+body.dark-mode .dark {
+    display: block !important;
+}
+
+body.dark-mode .graphic.dark {
+    width: 100%;
+    bottom: -1px;
+    left: -1px;
+}
+
+body.dark-mode #sub-page:after {
+    display: block;
+}
+
+#sub-page:after {
+    content: '';
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .4;
+}
+
+body.dark-mode .contact-topper {
+    color: #fff;
+}
+
+body.dark-mode #services .service-item h2 {
+    color: #fff;
+}
+
+body.dark-mode .services-button {
+    color: #18191a;
+}
+
+body.dark-mode #call-now {
+    background: #215656;
+}
+
+body.dark-mode #call-now a {
+    color: #18191a;
+}
+
+body.dark-mode #hero {
+    background: url("/images/beach-night-mobile.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.dark-mode #hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgb(6,22,57);
+    background: -moz-radial-gradient(circle, rgba(6,22,57,0.6054796918767507) 0%, rgba(6,22,57,1) 74%);
+    background: -webkit-radial-gradient(circle, rgba(6,22,57,0.6054796918767507) 0%, rgba(6,22,57,1) 74%);
+    background: radial-gradient(circle, rgba(6,22,57,0.6054796918767507) 0%, rgba(6,22,57,1) 74%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#061639",endColorstr="#061639",GradientType=1);
+    top: 0;
+    left: 0;
+}
+
+body.dark-mode .moon {
+    width: 25px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 3;
+    opacity: .4;
+}
+
+body.dark-mode .about-button {
+    background: #038205;
+}
+
+body.dark-mode footer .design-credit {
+    background: #000;
+}
+
+body.dark-mode footer .design-credit a {
+    color: rgba(0,221,246,1);
+}
+
+body.dark-mode .price-card {
+    background: #449dad;
+}
+
+body.dark-mode #contact button[type="submit"] {
+    background: #449dad;
+}
+
+/* About */
+
+body.dark-mode .about-content h2 {
+    color: #fff;
+}
+
+body.dark-mode main li {
+    color: #fff;
+    opacity: .9;
+}
+
+body.dark-mode #compliance h2 {
+    color: #fff;
+}
+
+body.dark-mode main h2,
+body.dark-mode main h3 {
+    color: #fff;
+}
+
+body.dark-mode .navbar-menu {
+    background: #000;
+}
+
+body.dark-mode .side-nav a {
+    color: #fff;
+    opacity: .9;
+}
+
+body.dark-mode .hamburger.is-active .hamburger-inner, 
+body.dark-mode .hamburger.is-active .hamburger-inner::before, 
+body.dark-mode .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+
+@media screen and (min-width:1024px) {
+    body.dark-mode .navbar-menu {
+        background: transparent;
+    }
+
+    body.dark-mode .moon {
+        top: 300px;
+        right: auto;
+        left: 50%;
+        margin-left: 360px;
+    }
+
+    .top-dark-mode-button {
+        left: 50%;
+        top: 73px;
+        margin-left: 460px;
+    }
+
+    body.dark-mode #hero {
+        background-attachment: fixed !important;
+        background: url("/images/beach-night.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width:1070px) {
+    .top-dark-mode-button {
+        margin-left: 475px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .top-dark-mode-button {
+        margin-left: 497px;
+    }
+}

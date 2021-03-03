@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/css/core-styles.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/sub-page.css">
+    <link rel="stylesheet" href="/css/dark.css">
 
      <!-- jQuery -->
      <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -57,24 +58,15 @@
         <!-- ============================================ -->
 
         <nav>
-            <!-- <div class="background container">
-                <div class="top-nav-strip container">
-                    <span>Call: (555) 234-2345</span>
-                    <span>info@email.com</span>
-                    <span>Los Angeles, CA 98210</span>
-                </div>
-                <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                </div>
-            </div> -->
+            <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                <span aria-hidden="true" class="dark-toggle">
+                    <span class="DTspan"></span>
+                </span>
+            </button>
             <!-- <div class="line"></div> -->
             <div class="navbar-menu">
                 <div class="navbar-menu">
-                    <img class="nav-keep" src="/images/company-logo-desktop.png" alt="compnay logo" width="100px">
+                    <a class="logo-link" href="/index.html"><img class="nav-keep" src="/images/company-logo-desktop.png" alt="compnay logo" width="100px"></a>
                     <div id="side-menu" class=" side-nav">
                         <ul id="on-top" class="navbar-links">
                             <li class="nav-li"><a href="/index.html">Home</a></li>
@@ -99,7 +91,8 @@
         <div class="container">
             <h1>About Us</h1>
         </div>
-        <img aria-hidden="true" class="graphic" src="/images/graphic.png" alt="">
+        <img aria-hidden="true" class="graphic white" src="/images/graphic.png" alt="">
+        <img aria-hidden="true" class="graphic dark" src="/images/dark-graphic.svg" alt="">
     </section>
 
     <!-- ============================================ -->
@@ -135,7 +128,7 @@
                 </ul>
             </div>
         </div>
-        <a class="services-button" href="/html/pricing.html">Our Prices <img class="sun" src="/images/sun.svg" alt=""></a>
+        <a class="services-button" href="/html/pricing.html">Our Prices <img aria-hidden="true" class="sun white" src="/images/sun.svg" alt=""><img aria-hidden="true" class="sun dark" src="/images/moon.svg" alt=""></a>
     </section>
 
     <!-- ============================================ -->

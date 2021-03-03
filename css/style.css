@@ -338,6 +338,7 @@
 .hippa img {
     display: block;
     margin: auto;
+    width: 100%;
 }
 
 #services .service-item {
@@ -353,6 +354,7 @@
     width: 80px;
     display: block;
     margin: auto;
+    margin-bottom: 40px;
 }
 
 #services .service-item h2 {
@@ -932,7 +934,7 @@
     <--- -------------------------- -*/
     
     #services {
-        padding: 100px 0;
+        padding: 100px 0 0;
     }
 
     .hippa {
